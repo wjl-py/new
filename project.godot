@@ -1,0 +1,15 @@
+config_version=5
+
+[application]
+config/name="Grading Simulator 3D"
+run/main_scene="res://scenes/Main.tscn"
+
+[autoload]
+InputSetup="*res://scripts/InputSetup.gd"
+
+[display]
+window/size/width=1280
+window/size/height=720
+
+[rendering]
+renderer/rendering_method="forward_plus"

@@ -1,0 +1,29 @@
+[gd_scene format=3]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="HUD" type="VBoxContainer" parent="."]
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 16.0
+offset_top = 16.0
+
+[node name="ScoreLabel" type="Label" parent="HUD"]
+text = "分数: 0"
+
+[node name="TimeLabel" type="Label" parent="HUD"]
+text = "时间: 120s"
+
+[node name="StreakLabel" type="Label" parent="HUD"]
+text = "连击: 0"
+
+[node name="QuestionLabel" type="Label" parent="HUD"]
+text = "题目"
+
+[node name="AnswerLabel" type="Label" parent="HUD"]
+text = "学生答案: "
+
+[node name="FeedbackLabel" type="Label" parent="HUD"]
+text = ""
+self_modulate = Color(1, 1, 1, 1)
+visible = false
