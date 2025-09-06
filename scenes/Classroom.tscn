@@ -1,0 +1,21 @@
+[gd_scene format=3]
+
+[sub_resource type="PlaneMesh" id="1"]
+
+[sub_resource type="BoxMesh" id="2"]
+
+[node name="Classroom" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-45, 30, 0)
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+mesh = SubResource("1")
+scale = Vector3(8, 1, 8)
+
+[node name="Desk" type="MeshInstance3D" parent="."]
+mesh = SubResource("2")
+position = Vector3(0, 0.75, -1.2)
+scale = Vector3(2.0, 0.15, 1.2)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
